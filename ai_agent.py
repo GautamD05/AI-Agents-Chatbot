@@ -23,9 +23,8 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 #Instantiating two language model (LLM) objects using the ChatOpenAI and ChatGroq classes, respectively. 
 #These objects represent configurations for interacting with specific LLMs provided by OpenAI and Groq.
-#openai_llm=ChatOpenAI(model="gpt-4o-mini",api_key=os.getenv("GROK_API_KEY"))
-#groq_llm=ChatGroq(model="llama-3.3-70b-versatile",api_key="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")
-
+#openai_llm=ChatOpenAI(model="gpt-4o-mini",api_key=os.getenv("OPENAI_API_KEY"))
+#groq_llm=ChatGroq(model="llama-3.3-70b-versatile",api_key=os.getenv("GROK_API_KEY"))
 #gets max of best 2 internet search results
 search_tool=TavilySearchResults(max_results=2)
 
